@@ -1,3 +1,4 @@
+import { DownloadMenu } from "@/components/DownloadMenu/DownloadMenu";
 import { ThemeToggle } from "@/components/ThemeToggle/ThemeToggle";
 import styles from "./Header.module.css";
 
@@ -19,6 +20,7 @@ export function Header({ name }: { name: string }) {
               {link.label}
             </a>
           ))}
+          <DownloadMenu />
           <ThemeToggle />
         </nav>
       </div>

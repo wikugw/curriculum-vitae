@@ -1,0 +1,81 @@
+/* Same pill shape as the theme toggle next to it. */
+.button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font:
+    500 13px var(--font-sans),
+    sans-serif;
+  cursor: pointer;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+}
+
+/*
+ * The open menu sits in the browser's top layer, outside the page layout.
+ * It is placed just under the header, lined up with the right edge of the
+ * page content (the same edge the header buttons sit on).
+ */
+.menu {
+  position: fixed;
+  inset: auto;
+  top: calc(var(--header-height) - 6px);
+  right: max(
+    var(--page-padding-x),
+    calc((100vw - var(--page-max-width)) / 2 + var(--page-padding-x))
+  );
+  width: min(300px, calc(100vw - 2 * var(--page-padding-x)));
+  margin: 0;
+  padding: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-background);
+  color: var(--color-text);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.12);
+}
+
+.menuTitle {
+  margin: 0;
+  padding: 6px 10px 4px;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.option:hover,
+.option:focus-visible {
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.optionLabel {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.optionDescription {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}

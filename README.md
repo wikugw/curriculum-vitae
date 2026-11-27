@@ -44,6 +44,17 @@ Everything is a Server Component except `Disclosure/` and `ThemeToggle/`, which 
 
 **Theme:** the page follows the system theme until the visitor clicks the toggle, after which their choice is saved in `localStorage`. A small script in `<head>` ([`src/lib/theme.ts`](src/lib/theme.ts)) applies the theme before the first paint, so there is no flash. Colors are defined once in [`globals.css`](src/app/globals.css) using `light-dark()`.
 
+## PDF downloads
+
+The "PDF" button in the header offers two versions, built from the same content files:
+
+- **Simple** (`/cv/simple`, 2 pages): roles, projects with a one-line description, education and skills.
+- **Detailed** (`/cv/detailed`): also every business and technical point of each project.
+
+Both are A4, one column (readable by applicant tracking systems), and generated once at build time with `@react-pdf/renderer`. The code is in [`src/pdf/`](src/pdf/); the two versions are defined in [`src/config/cvVersions.ts`](src/config/cvVersions.ts). The fonts in `src/pdf/fonts/` are the complete IBM Plex files (SIL Open Font License), because the web subsets miss characters such as "→".
+
+After changing CV content, check the PDFs with `npm run dev` and open `/cv/simple` and `/cv/detailed`.
+
 ## Deploying
 
 Import the repository in Vercel. No settings or environment variables are needed: the site URL used for SEO comes from Vercel's `VERCEL_PROJECT_PRODUCTION_URL`, and switches to a custom domain automatically if one is added.
