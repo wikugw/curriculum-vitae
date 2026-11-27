@@ -1,0 +1,32 @@
+.groups {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.groupTitle {
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 16px;
+}
+
+.rowLabel {
+  flex: 0 0 150px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.rowItems {
+  flex: 1 1 260px;
+}

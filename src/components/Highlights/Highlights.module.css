@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.text {
+  color: var(--color-text-muted);
+  text-wrap: pretty;
+}

@@ -1,0 +1,37 @@
+.hero {
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.name {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.headline {
+  margin: 8px 0 0;
+  font-size: 20px;
+  color: var(--color-text-muted);
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 20px;
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.summary {
+  max-width: 68ch;
+  margin: 28px 0 0;
+  font-size: 18px;
+  line-height: 1.7;
+  text-wrap: pretty;
+}

@@ -1,0 +1,15 @@
+.chip {
+  padding: 4px 9px;
+  border-radius: 5px;
+  background: var(--color-chip);
+  color: var(--color-text);
+  font-family: var(--font-mono), monospace;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.chipList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

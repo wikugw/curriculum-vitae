@@ -1,0 +1,5 @@
+.main {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 64px var(--page-padding-x) 96px;
+}

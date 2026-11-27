@@ -1,0 +1,123 @@
+.jobList {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+/* Job */
+
+.job {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.jobTitleRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 4px 16px;
+}
+
+.company {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.period {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.jobTitle {
+  color: var(--color-text-muted);
+}
+
+/* Project */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  border-left: 1px solid var(--color-border);
+}
+
+.projectName {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.projectRole {
+  margin-top: 2px;
+  font-family: var(--font-mono), monospace;
+  font-size: 12.5px;
+  color: var(--color-text-faint);
+}
+
+.description {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.panels {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Business view */
+
+.businessList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.businessList > li {
+  padding-left: 4px;
+  text-wrap: pretty;
+}
+
+.businessLabel {
+  font-weight: 600;
+}
+
+.subPoints {
+  margin: 6px 0 0;
+  padding-left: 20px;
+  color: var(--color-text-muted);
+  list-style: circle;
+}
+
+/* Technical view */
+
+.technicalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.technicalNotes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--color-text-muted);
+}
+
+.technicalNotes > li {
+  padding-left: 4px;
+  text-wrap: pretty;
+}

@@ -1,0 +1,53 @@
+.disclosure {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+/* Hide the default triangle; we draw our own chevron. */
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+/* A small right-pointing triangle that turns down when open. */
+.chevron {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid var(--color-text-muted);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.2s;
+}
+
+.disclosure[open] .chevron {
+  transform: rotate(90deg);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.summary:hover .label {
+  color: var(--color-text);
+}
+
+.count {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  color: var(--color-text-faint);
+}
+
+.body {
+  padding-bottom: 16px;
+}

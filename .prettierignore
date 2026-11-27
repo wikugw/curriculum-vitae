@@ -1,0 +1,5 @@
+node_modules
+.next
+package-lock.json
+cv-website-mockup-design
+AGENTS.md
